@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>LocalStash</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main>
+        <h1>LocalStash</h1>
+        <div class="alert">
+            All files are stored locally in your browser. They are <b>not</b> uploaded to any server.
+            This also means that if you change your browser or clear your browser data, you will lose all your files.
+        </div>
+        <div class="alert">
+            Please note that there is a file size limit of <span id="maxSizeDisplay" style="font-weight: bold"></span>.
+        </div>
+        <br />
+        <p>Click below to upload files:</p>
+        <input type="file" id="fileInput" multiple />
+        <br />
+        <br />
+        <div id="fileList"></div>
+
+        <p style="font-size: 12px; opacity: 80%">
+            <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's
+                Privacy Policy</a>.
+            <a href="https://frost.cat/impressum">Impressum</a>
+        </p>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
